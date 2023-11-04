@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+  background-color: lightgray;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+
+button.accordion.active,
+button.accordion:hover {
+
+    background-color: #ddd;
+}
+
+
+button.accordion:after {
+
+/* Unicode character for "plus" sign
+(+) is '\02795' */ 
+
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+
+button.accordion.active:after {
+
+/* Unicode character for "minus" sign
+(-) is '\2796' */ 
+
+    content: "\2796";
+}
+
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 5000px;
+}
+
+</style>
+</head>
+<body>
+  
+<a style="float:right" href="FAQ.html">አማርኛ</a>
+
+<h2>Description of the app </h2>
+
+<p>These are frequently asked questions (FAQ).
+</p>
+
+<button class="accordion">What do this app?
+</button>
+
+<div class="panel">
+  
+<p> This app contains basic web development languages. There are currently more than a hundred thousand of websites in the world. 
+<br> <br> 
+So you need to know these languages to keep up with the times and to build and sell your own website. 98% of Hundreds thousands of websites use these languages. 
+<br> <br> 
+The app is for those from beginners to advance. It has a note in English and Amharic and is also presented with a complete video in Amharic. It has its own game so that you do not overwhelm you when you read it. 
+<br> <br> 
+To learn more about this app, take a look at the work of a website developer who followed this tutorial:
+<br> <a href="https://prostatic-vehicle.000webhostapp.com"> prostatic-vehicle.000webhostapp.com </a>
+<br> <a href="https://ogygian-cardboard.000webhostapp.com/home.html"> ogygian-cardboard.000webhostapp.com </a> 
+<br> <br> 
+It tells you how to Publish your website finally. </p>
+
+</div>
+
+<button class="accordion">How I get the password?</button>
+<div class="panel">
+  
+<p> Teleber account <a href="#">0930531637</a> or <a href="#">1000 ... on yohanes debebe mulatu </a> enter 100 Birr. You have a 10% discount for those who submit as a group.
+<br> <br>
+Insert the transaction ID you entered into the keyboard and touch ✅️the Wright icon✔️. Capital and Small Letter are different because they are sensitive when you submit them.
+<br> <br>
+You can pay the fee on another phone but you only have to enter the transaction id 'with the phone you are using. It should not be airtime or package when you pay. We do not take responsibility for this. 
+<br> <br>
+For those who pay in groups, pay 90% of the total amount (for example, 5 * 100 * 90% = 450 Birr) after you enter a transaction id on each phone &m=1, &m=2 ... The order of writing should be like this! Otherwise the system 'Moo will not work.
+<br> <br>
+After an hour (sometimes less than that) (sometimes up to 12 hours due to network congestion) enter the transaction id 'again and touch ✅️the Wright icon✔️. Enter the password into transaction id place.
+<br> <br>
+If you do not respond to a maximum of 12 hours, by email <a href="#"> yopeman318@gmail.com</a> or Telegram bot <a href="https://t.me/yope_318"> @yope_318 </a> or by phone number <a href="#"> 0930531637 </a> by prioritizing Transaction ID (warning cannot be called !!!). </p>
+
+<p><a  href="https://yope.github.io/FullWebDev/video/faq/faq1.mp4">To more information see the video.</a></p>
+
+</div>
+
+<button class="accordion">Does it ask a password again?
+</button>
+<div class="panel">
+
+<p>It does not ask a password again. But if you log in to Setting and touch Clear data, it will ask again. We do not take responsibility for this.</p>
+
+</div>
+
+
+<button class="accordion">Warning!
+</button>
+<div class="panel">
+
+<p> The amount of money you deposit must be correct. 
+<br> <br> 
+Transaction ID When you enter a Case Sensitive, Capital and Small are different.
+<br> <br> 
+It is possible to pay on the other phone but it should only be sent to the phone you are using.
+<br> <br> 
+For those who pay in the group, the transaction id on their own phone and next &m=1 (this is for the first person), &m2=2 (this is for the second person), etc. 
+<br> <br> 
+If you log in to setting and touch Clear data again, it will ask for password again. We do not take responsibility for this.
+<br> <br>
+When you pay, there should be no airtime or package. We do not take responsibility for this. 
+<br> <br> For comments by email <a href="#"> yopeman318@gmail.com</a> or Telegram bot <a href="https://t.me/YOpe_318"> @yope_318 </a> Let us know. </p>
+
+</div>
+
+<script>
+
+var acc = document
+.getElementsByClassName("accordion");
+
+var i;
+
+for (i = 0; i < acc.length; i++) {
+ acc[i].onclick = function(){
+  this.classList.toggle("active");
+  this.nextElementSibling.classList
+  .toggle("show");
+  }
+}
+
+</script>
+
+</body>
+</html>
